@@ -118,46 +118,6 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <a href="https://360dvo.hkustvgd.com" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</h5>
-            <span class="work-venue">IEEE Robotics and Automation Letters (RA-L), 2026.</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://360vots.hkustvgd.com" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>360VOTS: Visual Object Tracking and Segmentation in Omnidirectional Videos</h5>
-            <span class="work-venue">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Nov. 2025.</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://huajianup.github.io/research/360VO/" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>360VO: Visual Odometry Using A Single 360 Camera</h5>
-            <span class="work-venue">IEEE International Conference on Robotics and Automation (ICRA), 2022.</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
   <section class="hero">
     <div class="hero-body">
@@ -187,52 +147,19 @@
 
                       <div class="column has-text-centered">
                         <div class="publication-links">
-                          <!-- TODO: Update with your paper PDF link (arXiv) -->
+                          <!-- TODO: Update with your arXiv link -->
                           <span class="link-block">
                             <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
                             class="external-link button is-normal is-rounded is-dark">
                             <span class="icon">
-                              <i class="fas fa-file-pdf"></i>
+                              <i class="ai ai-arxiv"></i>
                             </span>
-                            <span>Paper</span>
+                            <span>arXiv</span>
                           </a>
                         </span>
-
-                        <!-- TODO: Update with your arXiv link -->
-                        <span class="link-block">
-                          <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
-                          class="external-link button is-normal is-rounded is-dark">
-                          <span class="icon">
-                            <i class="ai ai-arxiv"></i>
-                          </span>
-                          <span>arXiv</span>
-                        </a>
-                      </span>
-
-                      <!-- TODO: Replace with your code repository URL when available -->
-                      <span class="link-block">
-                        <a href="https://github.com/hkust-vgd/nemosplat" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fab fa-github"></i>
-                        </span>
-                        <span>Code</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary video -->
-                    <span class="link-block">
-                      <a href="static/videos/supp.mp4" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-video"></i>
-                      </span>
-                      <span>Supplementary Video</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
+                      </div>
+                    </div>
+                  </div>
           </div>
         </div>
       </div>
@@ -288,52 +215,6 @@
               </p>
               <p style="text-align: center; color: #666;">
                 Overview of the NemoSplat framework: camera pose &amp; depth heads anchor the geometry; the Promptable Dynamic Disentangler separates moving objects; the Media-Aware Gaussian Predictor jointly estimates 3D Gaussian attributes and physical water parameters (attenuation &beta;<sup>D</sup>, backscatter &beta;<sup>B</sup>, veiling light B<sup>&infin;</sup>).
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Promptable Dynamic Disentangler -->
-    <section class="section hero">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-five-fifths">
-            <h2 class="title is-3">Promptable Dynamic Disentangler</h2>
-            <div class="content has-text-justified">
-              <p>
-                To explicitly decouple moving entities from the background, NemoSplat predicts a dynamic probability map and a background water mask. Optionally, a user-provided text prompt (e.g., &ldquo;fish&rdquo;) is encoded via CLIP and fused with the geometric prediction through a confidence-aware logit adjustment, producing a refined dynamic mask without destroying object boundary cohesion. Without a prompt, the network functions as a fully automatic dynamic-static separator.
-              </p>
-              <p>
-                <img width="100%" src="static/images/mask.png" alt="Dynamic-semantic mask generation" loading="lazy"/>
-              </p>
-              <p style="text-align: center; color: #666;">
-                Dynamic-Semantic Mask Generation: the Promptable Dynamic Disentangler refines the predicted dynamic mask via logit adjustment using an optional text prompt-guided semantic map.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Media-Aware Gaussian Predictor / Descattering -->
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-five-fifths">
-            <h2 class="title is-3">Media-Aware Gaussian Predictor</h2>
-            <div class="content has-text-justified">
-              <p>
-                A unified Gaussian head densely regresses standard 3DGS attributes (opacity, scale, rotation, spherical-harmonic color) for each pixel-unprojected primitive, and simultaneously predicts the physical water medium parameters of the underwater image formation model:
-                <i>I&#770;</i><sub>obs</sub> = J<sub>GS</sub> &odot; e<sup>&minus;&beta;<sup>D</sup>D</sup> + B<sup>&infin;</sup> &odot; (1 &minus; e<sup>&minus;&beta;<sup>B</sup>D</sup>).
-                Training is regularized by multi-view consistency, veiling-light and Jerlov water-type physical constraints, restoring pristine appearance in a single forward pass &mdash; no per-scene optimization.
-              </p>
-              <p>
-                <img width="100%" src="static/images/comparison_restored.png" alt="Descattering results on SeaThru-NeRF" loading="lazy"/>
-              </p>
-              <p style="text-align: center; color: #666;">
-                Restored images on the SeaThru-NeRF dataset. NemoSplat recovers more natural colors and clearer distant structures in &lt;10 seconds per scene, while the optimization-based SeaSplat takes ~6 minutes.
               </p>
             </div>
           </div>
