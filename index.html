@@ -3,95 +3,72 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
+
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="NemoSplat - AUTHOR_NAMES_HERE">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="title" content="NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction - Xiaopeng Guo, Wai Chung Tse, Yipeng Zhu, Hanwen Zhang, Huajian Huang, Sai-Kit Yeung">
+  <meta name="description" content="NemoSplat is the first feed-forward 4D Gaussian Splatting framework for media-aware dynamic reconstruction directly from uncalibrated underwater videos, achieving state-of-the-art tracking accuracy and high-fidelity rendering.">
+  <meta name="keywords" content="3D Gaussian Splatting, 4DGS, Feed-Forward Models, Underwater Reconstruction, Novel View Synthesis, Underwater Media Modeling, computer vision">
+  <meta name="author" content="Xiaopeng Guo, Wai Chung Tse, Yipeng Zhu, Hanwen Zhang, Huajian Huang, Sai-Kit Yeung">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
-  
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="HKUST">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2026-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="og:site_name" content="HKUST VGD">
+  <meta property="og:title" content="NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction">
+  <meta property="og:description" content="The first feed-forward 4D Gaussian Splatting framework for media-aware dynamic reconstruction directly from uncalibrated underwater videos.">
+  <meta property="og:url" content="https://hkust-vgd.github.io/nemosplat-page/">
+  <meta property="og:image" content="https://hkust-vgd.github.io/nemosplat-page/static/images/teaser.png">
+  <meta property="og:image:alt" content="NemoSplat - Research Preview">
+  <meta property="article:published_time" content="2026-08-24T00:00:00.000Z">
+  <meta property="article:author" content="Xiaopeng Guo">
   <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
+  <meta property="article:tag" content="3D Gaussian Splatting">
+  <meta property="article:tag" content="Underwater Reconstruction">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction">
+  <meta name="twitter:description" content="The first feed-forward 4D Gaussian Splatting framework for media-aware dynamic reconstruction directly from uncalibrated underwater videos.">
+  <meta name="twitter:image" content="https://hkust-vgd.github.io/nemosplat-page/static/images/teaser.png">
+  <meta name="twitter:image:alt" content="NemoSplat - Research Preview">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
-  
+  <meta name="citation_title" content="NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction">
+  <meta name="citation_author" content="Guo, Xiaopeng">
+  <meta name="citation_author" content="Tse, Wai Chung">
+  <meta name="citation_author" content="Zhu, Yipeng">
+  <meta name="citation_author" content="Zhang, Hanwen">
+  <meta name="citation_author" content="Huang, Huajian">
+  <meta name="citation_author" content="Yeung, Sai-Kit">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="arXiv preprint">
+
   <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
   <meta name="msapplication-TileColor" content="#2563eb">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  
+
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
+  <title>NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction</title>
 
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>NemoSplat</title>
-
-  <!-- Favicon and App Icons -->
-  <!-- TODO: Add your own favicon at static/images/favicon.ico and update the paths below -->
-  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
-  <!-- <link rel="apple-touch-icon" href="static/images/favicon.ico"> -->
-  
   <!-- Critical CSS - Load synchronously -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
-  
+
   <!-- Non-critical CSS - Load asynchronously -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" 
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
-  
+
   <!-- Fallback for browsers that don't support preload -->
   <noscript>
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -99,89 +76,42 @@
     <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   </noscript>
-  
+
   <!-- Fonts - Optimized loading -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
+
   <!-- Defer non-critical JavaScript -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
-  
+
   <!-- Structured Data for Academic Papers -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction",
+    "description": "The first feed-forward 4D Gaussian Splatting framework for media-aware dynamic reconstruction directly from uncalibrated underwater videos.",
     "author": [
-      {
-        "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      },
-      {
-        "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
-        "affiliation": {
-          "@type": "Organization",
-          "name": "INSTITUTION_NAME"
-        }
-      }
+      {"@type": "Person", "name": "Xiaopeng Guo", "affiliation": {"@type": "Organization", "name": "The Hong Kong University of Science and Technology"}},
+      {"@type": "Person", "name": "Wai Chung Tse", "affiliation": {"@type": "Organization", "name": "The Hong Kong University of Science and Technology"}},
+      {"@type": "Person", "name": "Yipeng Zhu", "affiliation": {"@type": "Organization", "name": "The Hong Kong University of Science and Technology"}},
+      {"@type": "Person", "name": "Hanwen Zhang", "affiliation": {"@type": "Organization", "name": "The Hong Kong University of Science and Technology"}},
+      {"@type": "Person", "name": "Huajian Huang", "affiliation": {"@type": "Organization", "name": "Beijing Institute of Technology"}},
+      {"@type": "Person", "name": "Sai-Kit Yeung", "affiliation": {"@type": "Organization", "name": "The Hong Kong University of Science and Technology"}}
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "datePublished": "2026-08-24",
+    "url": "https://hkust-vgd.github.io/nemosplat-page/",
+    "image": "https://hkust-vgd.github.io/nemosplat-page/static/images/teaser.png",
+    "keywords": ["3D Gaussian Splatting", "Feed-Forward Models", "Underwater Media Modeling", "Novel View Synthesis"],
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "license": "https://creativecommons.org/licenses/by/4.0/"
   }
   </script>
 </head>
 <body>
-
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
@@ -203,7 +133,6 @@
         </button>
       </div>
       <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
         <a href="https://360dvo.hkustvgd.com" class="work-item" target="_blank">
           <div class="work-info">
             <h5>360DVO: Deep Visual Odometry for Monocular 360-Degree Camera</h5>
@@ -218,6 +147,13 @@
           </div>
           <i class="fas fa-external-link-alt"></i>
         </a>
+        <a href="https://huajianup.github.io/research/360VO/" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>360VO: Visual Odometry Using A Single 360 Camera</h5>
+            <span class="work-venue">IEEE International Conference on Robotics and Automation (ICRA), 2022.</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
       </div>
     </div>
   </div>
@@ -228,284 +164,363 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">NemoSplat: YOUR_PAPER_TITLE_HERE</h1>
+            <h1 class="title is-1 publication-title">NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction</h1>
             <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST_AUTHOR_PERSONAL_LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://github.com/chris1004336379" target="_blank">Xiaopeng Guo</a>,</span>
                 <span class="author-block">
-                  <a href="SECOND_AUTHOR_PERSONAL_LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  Wai Chung Tse,</span>
                   <span class="author-block">
-                    <a href="THIRD_AUTHOR_PERSONAL_LINK" target="_blank">Third Author</a><sup>†</sup>
-                  </span>
-                  </div>
+                    Yipeng Zhu,</span>
+                    <span class="author-block">
+                      Hanwen Zhang,</span>
+                      <span class="author-block">
+                        <a href="https://huajianup.github.io" target="_blank">Huajian Huang</a>,</span>
+                        <span class="author-block">
+                          <a href="https://saikit.org/index.html" target="_blank">Sai-Kit Yeung</a>
+                        </span>
+                      </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">The Hong Kong University of Science and Technology<br>
-                      CONFERENCE_OR_JOURNAL_NAME, YEAR.</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution,
-                      <sup>†</sup>Indicates Corresponding Author</small></span>
-                  </div>
+                      <div class="is-size-5 publication-authors">
+                        <span class="author-block">The Hong Kong University of Science and Technology &middot; Beijing Institute of Technology</span>
+                      </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                      <!-- TODO: Update with your paper PDF link -->
+                      <div class="column has-text-centered">
+                        <div class="publication-links">
+                          <!-- TODO: Update with your paper PDF link (arXiv) -->
+                          <span class="link-block">
+                            <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                            <span class="icon">
+                              <i class="fas fa-file-pdf"></i>
+                            </span>
+                            <span>Paper</span>
+                          </a>
+                        </span>
+
+                        <!-- TODO: Update with your arXiv link -->
+                        <span class="link-block">
+                          <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
+                          class="external-link button is-normal is-rounded is-dark">
+                          <span class="icon">
+                            <i class="ai ai-arxiv"></i>
+                          </span>
+                          <span>arXiv</span>
+                        </a>
+                      </span>
+
+                      <!-- TODO: Replace with your code repository URL when available -->
                       <span class="link-block">
-                        <a href="PAPER_PDF_LINK" target="_blank"
+                        <a href="https://github.com/hkust-vgd/nemosplat" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
+                          <i class="fab fa-github"></i>
                         </span>
-                        <span>Paper</span>
+                        <span>Code</span>
                       </a>
                     </span>
 
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
+                    <!-- Supplementary video -->
                     <span class="link-block">
-                      <a href="SUPPLEMENTARY_LINK" target="_blank"
+                      <a href="static/videos/supp.mp4" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-video"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Supplementary Video</span>
                     </a>
                   </span>
-
-                  <!-- TODO: Replace with your GitHub repository URL -->
-                  <span class="link-block">
-                    <a href="https://github.com/hkust-vgd/YOUR_CODE_REPO" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/YOUR_ARXIV_ID" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-                <span class="link-block">
-                  <a href="YOUR_DATASET_LINK" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="fas fa-database"></i>
-                  </span>
-                  <span>Dataset</span>
-                </a>
-              </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            YOUR_ABSTRACT_HERE.
-          </p>
+    <!-- Teaser figure -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <div class="content has-text-justified">
+              <p>
+                <img width="100%" src="static/images/teaser.png" alt="NemoSplat teaser" loading="lazy"/>
+              </p>
+              <p style="text-align: center; color: #666;">
+                We present NemoSplat, a novel feed-forward model that directly reconstructs photorealistic underwater scenes from uncalibrated image sequences, robustly handling numerous dynamic objects and water-induced degradation.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-fifths">
-        <h2 class="title is-3">Pipeline</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Describe your method pipeline -->
-          <p>
-            YOUR_PIPELINE_DESCRIPTION_HERE.
-          </p>
-          <!-- TODO: Add your teaser/pipeline figure at static/images/teaser.png -->
-          <p>
-            <img width="100%" src="static/images/teaser.png"/>
-          </p>
+    <!-- Paper abstract -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Reconstructing photorealistic scenes in unconstrained underwater environments remains challenging due to severe media-induced light scattering and unpredictable dynamic objects. Recent feed-forward visual foundation models have demonstrated remarkable capabilities in generalized novel view synthesis and tracking. However, when directly applied to aquatic videos, optical attenuation and motion interference fatally corrupt their feature aggregation, leading to severe tracking and reconstruction failures. To overcome these limitations, we present NemoSplat, the first feed-forward 4D Gaussian Splatting framework tailored for media-aware dynamic reconstruction directly from uncalibrated marine videos. Beyond providing robust estimations of camera poses and dense scene depth, we devise a Promptable Dynamic Disentangler that utilizes a confidence-aware fusion strategy of learned dynamic probabilities and optional semantic text priors, effectively isolating massive transient entities. Furthermore, to counteract visual degradation, a Media-Aware Gaussian Predictor is formulated to jointly estimate intrinsic 3D Gaussian attributes alongside physical media parameters, rendering pristine scene appearance in a single forward pass. Additionally, we introduce a large-scale underwater dataset with massive dynamic elements to facilitate training and evaluation. Extensive experiments on our dataset demonstrate that NemoSplat achieves state-of-the-art tracking accuracy and high-fidelity rendering.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+    <!-- End paper abstract -->
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container" style="width: 90%; margin: 0 auto; max-width: 960px;">
-      <!-- TODO: Rename this section (e.g. Dataset / Qualitative Results) -->
-      <h2 class="title is-3 has-text-centered">Results</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-five-fifths">
-          <div class="content has-text-justified">
-            <!-- TODO: Describe your results / dataset -->
+    <!-- Pipeline -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Method Overview</h2>
+            <div class="content has-text-justified">
+              <p>
+                Given uncalibrated marine videos, NemoSplat integrates geometry prediction, dynamic-static separation and physical media restoration into a single forward pass. The model leverages a Streaming Geometry Transformer (DINOv2 tokenizer + 24-layer causal alternating attention) to extract robust spatiotemporal features. A shared feature encoder feeds specialized decoder heads to jointly estimate camera poses, dense depth, dynamic masks, water medium parameters, and intrinsic 4D Gaussians.
+              </p>
+              <p>
+                <img width="100%" src="static/images/overview.png" alt="NemoSplat pipeline overview" loading="lazy"/>
+              </p>
+              <p style="text-align: center; color: #666;">
+                Overview of the NemoSplat framework: camera pose &amp; depth heads anchor the geometry; the Promptable Dynamic Disentangler separates moving objects; the Media-Aware Gaussian Predictor jointly estimates 3D Gaussian attributes and physical water parameters (attenuation &beta;<sup>D</sup>, backscatter &beta;<sup>B</sup>, veiling light B<sup>&infin;</sup>).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promptable Dynamic Disentangler -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Promptable Dynamic Disentangler</h2>
+            <div class="content has-text-justified">
+              <p>
+                To explicitly decouple moving entities from the background, NemoSplat predicts a dynamic probability map and a background water mask. Optionally, a user-provided text prompt (e.g., &ldquo;fish&rdquo;) is encoded via CLIP and fused with the geometric prediction through a confidence-aware logit adjustment, producing a refined dynamic mask without destroying object boundary cohesion. Without a prompt, the network functions as a fully automatic dynamic-static separator.
+              </p>
+              <p>
+                <img width="100%" src="static/images/mask.png" alt="Dynamic-semantic mask generation" loading="lazy"/>
+              </p>
+              <p style="text-align: center; color: #666;">
+                Dynamic-Semantic Mask Generation: the Promptable Dynamic Disentangler refines the predicted dynamic mask via logit adjustment using an optional text prompt-guided semantic map.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Media-Aware Gaussian Predictor / Descattering -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Media-Aware Gaussian Predictor</h2>
+            <div class="content has-text-justified">
+              <p>
+                A unified Gaussian head densely regresses standard 3DGS attributes (opacity, scale, rotation, spherical-harmonic color) for each pixel-unprojected primitive, and simultaneously predicts the physical water medium parameters of the underwater image formation model:
+                <i>I&#770;</i><sub>obs</sub> = J<sub>GS</sub> &odot; e<sup>&minus;&beta;<sup>D</sup>D</sup> + B<sup>&infin;</sup> &odot; (1 &minus; e<sup>&minus;&beta;<sup>B</sup>D</sup>).
+                Training is regularized by multi-view consistency, veiling-light and Jerlov water-type physical constraints, restoring pristine appearance in a single forward pass &mdash; no per-scene optimization.
+              </p>
+              <p>
+                <img width="100%" src="static/images/comparison_restored.png" alt="Descattering results on SeaThru-NeRF" loading="lazy"/>
+              </p>
+              <p style="text-align: center; color: #666;">
+                Restored images on the SeaThru-NeRF dataset. NemoSplat recovers more natural colors and clearer distant structures in &lt;10 seconds per scene, while the optimization-based SeaSplat takes ~6 minutes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiments: quantitative tables -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Experiments</h2>
+            <div class="content has-text-justified">
+              <p>
+                We compare NemoSplat with six state-of-the-art baselines spanning feed-forward foundation models (VGGT, StreamVGGT), feed-forward 3DGS (YoNoSplat, AnySplat), and optimization-based dynamic GS-SLAM systems (Droid-W, WildGS-SLAM) on our synthetic benchmark (BoulderShore / Coral / Deepsea) and 14 real-world aquatic sequences.
+              </p>
+            </div>
+
+            <div class="content" style="overflow-x: auto;">
+              <p style="text-align:center; font-weight:600;">Synthetic sequences: tracking (ATE, m) and rendering (PSNR / SSIM / LPIPS)</p>
+              <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin: 0 auto; font-size: 0.85rem;">
+                <thead>
+                  <tr>
+                    <th rowspan="2">Method</th>
+                    <th colspan="4">BoulderShore</th>
+                    <th colspan="4">Coral</th>
+                    <th colspan="4">Deepsea</th>
+                    <th colspan="4">Average</th>
+                  </tr>
+                  <tr>
+                    <th>ATE&darr;</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th>
+                    <th>ATE&darr;</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th>
+                    <th>ATE&darr;</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th>
+                    <th>ATE&darr;</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>VGGT</td><td>0.19</td><td>-</td><td>-</td><td>-</td><td><b>0.23</b></td><td>-</td><td>-</td><td>-</td><td>5.93</td><td>-</td><td>-</td><td>-</td><td>2.12</td><td>-</td><td>-</td><td>-</td></tr>
+                  <tr><td>StreamVGGT</td><td>0.40</td><td>-</td><td>-</td><td>-</td><td>0.79</td><td>-</td><td>-</td><td>-</td><td>5.01</td><td>-</td><td>-</td><td>-</td><td>2.06</td><td>-</td><td>-</td><td>-</td></tr>
+                  <tr><td>WildGS-SLAM</td><td><u>0.12</u></td><td>18.80</td><td><u>0.60</u></td><td>0.45</td><td>4.97</td><td>17.01</td><td>0.55</td><td>0.52</td><td><u>0.81</u></td><td><u>29.86</u></td><td><u>0.81</u></td><td><u>0.35</u></td><td>1.96</td><td>21.89</td><td><u>0.65</u></td><td>0.44</td></tr>
+                  <tr><td>Droid-W</td><td><b>0.11</b></td><td>20.04</td><td><b>0.71</b></td><td>0.44</td><td>4.65</td><td>18.56</td><td><b>0.58</b></td><td>0.56</td><td><b>0.78</b></td><td><b>31.93</b></td><td><b>0.83</b></td><td><b>0.30</b></td><td><b>1.85</b></td><td><u>23.51</u></td><td><b>0.71</b></td><td>0.43</td></tr>
+                  <tr><td>YoNoSplat</td><td>0.39</td><td>17.81</td><td>0.46</td><td>0.55</td><td><u>0.27</u></td><td>17.63</td><td>0.44</td><td>0.56</td><td colspan="4" style="text-align:center;">&times; (OOM)</td><td colspan="4" style="text-align:center;">&times;</td></tr>
+                  <tr><td>AnySplat</td><td>0.54</td><td><u>20.05</u></td><td>0.56</td><td><u>0.38</u></td><td>2.59</td><td><b>20.98</b></td><td>0.52</td><td><u>0.38</u></td><td>5.78</td><td>24.24</td><td>0.41</td><td>0.40</td><td>2.97</td><td>21.76</td><td>0.50</td><td><u>0.39</u></td></tr>
+                  <tr style="background-color:#FCECE2;"><td><b>Ours</b></td><td>0.24</td><td><b>21.71</b></td><td>0.57</td><td><b>0.31</b></td><td>0.54</td><td><u>20.41</u></td><td><u>0.56</u></td><td><b>0.37</b></td><td>4.85</td><td>29.83</td><td>0.55</td><td>0.41</td><td><u>1.88</u></td><td><b>23.98</b></td><td>0.56</td><td><b>0.36</b></td></tr>
+                </tbody>
+              </table>
+              <p style="text-align:center; color:#666; font-size:0.85rem;">Bold: best. Underlined: second best. &ldquo;-&rdquo;: method does not support rendering. &times;: out of memory. NemoSplat achieves the best overall PSNR (23.98 dB) and LPIPS (0.36), with a highly competitive average ATE of 1.88 m.</p>
+            </div>
+
+            <div class="content" style="overflow-x: auto; margin-top: 2rem;">
+              <p style="text-align:center; font-weight:600;">Real-world sequences (14 scenes): average novel view synthesis quality</p>
+              <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin: 0 auto; font-size: 0.9rem;">
+                <thead>
+                  <tr><th>Method</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>WildGS-SLAM</td><td>19.15</td><td><u>0.60</u></td><td><u>0.41</u></td></tr>
+                  <tr><td>Droid-W</td><td>18.12</td><td>0.56</td><td>0.44</td></tr>
+                  <tr><td>YoNoSplat</td><td>15.64</td><td>0.41</td><td>0.60</td></tr>
+                  <tr><td>AnySplat</td><td><u>19.22</u></td><td><u>0.60</u></td><td>0.42</td></tr>
+                  <tr style="background-color:#FCECE2;"><td><b>Ours</b></td><td><b>21.58</b></td><td><b>0.68</b></td><td><b>0.26</b></td></tr>
+                </tbody>
+              </table>
+              <p style="text-align:center; color:#666; font-size:0.85rem;">NemoSplat surpasses all baselines on every metric: +2.36 dB PSNR and +0.08 SSIM over the second-best AnySplat, and a 36.6% relative LPIPS reduction compared to WildGS-SLAM.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualitative comparisons -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Qualitative Comparison</h2>
+            <div class="content has-text-justified">
+              <p>
+                On highly degraded real-world aquatic sequences, conventional feed-forward models and SLAM-based baselines suffer from severe ghosting, topological blurring, and visual artifacts caused by unconstrained dynamic entities (e.g., schools of swimming fish). NemoSplat explicitly decouples transient motion from the static topology, synthesizing crisp, temporally consistent, artifact-free novel views.
+              </p>
+              <p>
+                <img width="100%" src="static/images/render_compare.png" alt="Qualitative comparison of novel view synthesis" loading="lazy"/>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rich reconstruction results -->
+    <section class="section hero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Reconstruction Results</h2>
+            <div class="content has-text-justified">
+              <p>
+                NemoSplat disentangles static Gaussian models from dynamic underwater scenes, providing comprehensive outputs including RGB renderings, depth maps, and dynamic masks.
+              </p>
+              <p>
+                <img width="100%" src="static/images/results_2.png" alt="Reconstruction results on real-world sequences" loading="lazy"/>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dataset -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-five-fifths">
+            <h2 class="title is-3">Dataset</h2>
+            <div class="content has-text-justified">
+              <p>
+                We construct a large-scale underwater dataset with <b>256 training sequences (155K frames)</b> and <b>20 evaluation scenes</b>. The training corpus spans 9 diverse geographic domains and employs a 13-class taxonomy to systematically capture complex marine life behaviors. Training data includes depth, water, and dynamic masks annotated via a human-refined SAM3 + SAHI pipeline. For evaluation, 6 synthetic UE5 sequences provide precise ground truth.
+              </p>
+              <p>
+                <img width="100%" src="static/images/eval_set.png" alt="Evaluation dataset examples" loading="lazy"/>
+              </p>
+              <p style="text-align: center; color: #666;">
+                Example sequences of our proposed evaluation dataset, including synthetic scenes with precise ground-truth annotations and diverse in-the-wild underwater sequences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supplementary video -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container" style="width: 90%; margin: 0 auto; max-width: 960px;">
+          <h2 class="title is-3 has-text-centered">Supplementary Video</h2>
+          <div class="publication-video" style="text-align:center;">
+            <video controls muted loop style="width: 100%; max-width: 960px; border-radius: 8px;" preload="metadata">
+              <source src="static/videos/supp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BibTeX citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title">BibTeX</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@article{guo2026nemosplat,
+  title   = {NemoSplat: Feed-Forward 4D Gaussian Splatting for Media-Aware Underwater Reconstruction},
+  author  = {Guo, Xiaopeng and Tse, Wai Chung and Zhu, Yipeng and Zhang, Hanwen and Huang, Huajian and Yeung, Sai-Kit},
+  journal = {arXiv preprint},
+  year    = {2026}
+}</code></pre>
+      </div>
+    </section>
+    <!-- End BibTeX citation -->
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
             <p>
-              YOUR_RESULTS_DESCRIPTION_HERE.
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+              target="_blank">Academic Project Page Template</a> which was adopted from the
+              <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              <br> This website is licensed under a <a rel="license"
+              href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
             </p>
           </div>
         </div>
       </div>
-        <div id="results-carousel" class="carousel results-carousel">
-          <!-- TODO: Add your result images to static/images/ and update items below -->
-          <div class="item">
-            <img src="static/images/result-01.png" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              Result 1: description here.
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/result-02.png" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              Result 2: description here.
-            </h2>
-          </div>
-          <div class="item">
-            <img src="static/images/result-03.png" loading="lazy"/>
-            <h2 class="subtitle has-text-centered">
-              Result 3: description here.
-            </h2>
-          </div>
-      </div>
     </div>
-  </div>
-</section>
-<!-- End image carousel -->
+  </footer>
 
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-fifths">
-        <h2 class="title is-3">Experiments</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Add your experiment figures to static/images/ and update below -->
-          <p>
-            <img width="100%" src="static/images/exp.png"/>
-          </p>
-          <p>
-            Table I: YOUR_TABLE_CAPTION_HERE.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container" style="width: 90%; margin: 0 auto; max-width: 960px;">
-        <h2 class="title is-3">Video Presentation</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
-          encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
-          allowfullscreen></iframe>
-        </div>
-    </div>
-  </div>
-</section>
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container" style="width: 90%; margin: 0 auto; max-width: 960px;">
-      <h2 class="title is-3 has-text-centered">Demo Videos</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <!-- TODO: Add your demo videos to static/videos/ and update items below -->
-        <div class="item item-video1">
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/demo_1.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-              Demo 1: description here.
-            </h2>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <source src="static/videos/demo_2.mp4" type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-              Demo 2: description here.
-            </h2>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>
-        <!-- TODO: Replace with your BibTeX entry -->
-        @article{yourpaper2026,
-          author={First Author and Second Author and Third Author},
-          journal={CONFERENCE_OR_JOURNAL_NAME},
-          title={NemoSplat: YOUR_PAPER_TITLE_HERE},
-          year={2026}
-        }
-      </code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" 
-            target="_blank">Academic Project Page Template</a> which was adopted from the 
-            <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            <br> This website is licensed under a <a rel="license"
-            href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
