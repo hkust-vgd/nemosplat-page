@@ -267,20 +267,70 @@
             </div>
 
             <div class="content" style="overflow-x: auto; margin-top: 2rem;">
-              <p style="text-align:center; font-weight:600;">Real-world sequences (14 scenes): average novel view synthesis quality</p>
-              <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin: 0 auto; font-size: 0.9rem;">
+              <p style="text-align:center; font-weight:600;">Real-world sequences (14 scenes): novel view synthesis quality (PSNR / SSIM / LPIPS)</p>
+              <table class="table is-bordered is-striped is-narrow is-hoverable" style="margin: 0 auto; font-size: 0.8rem;">
                 <thead>
-                  <tr><th>Method</th><th>PSNR&uarr;</th><th>SSIM&uarr;</th><th>LPIPS&darr;</th></tr>
+                  <tr>
+                    <th>Method</th><th>Metric</th>
+                    <th>01</th><th>02</th><th>03</th><th>04</th><th>05</th><th>06</th><th>07</th>
+                    <th>08</th><th>09</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th>
+                    <th>Avg.</th>
+                  </tr>
                 </thead>
                 <tbody>
-                  <tr><td>WildGS-SLAM</td><td>19.15</td><td><u>0.60</u></td><td><u>0.41</u></td></tr>
-                  <tr><td>Droid-W</td><td>18.12</td><td>0.56</td><td>0.44</td></tr>
-                  <tr><td>YoNoSplat</td><td>15.64</td><td>0.41</td><td>0.60</td></tr>
-                  <tr><td>AnySplat</td><td><u>19.22</u></td><td><u>0.60</u></td><td>0.42</td></tr>
-                  <tr style="background-color:#FCECE2;"><td><b>Ours</b></td><td><b>21.58</b></td><td><b>0.68</b></td><td><b>0.26</b></td></tr>
+                  <tr>
+                    <td rowspan="3" style="vertical-align: middle;">WildGS-SLAM</td>
+                    <td>PSNR&uarr;</td><td>19.31</td><td>18.13</td><td><b>20.85</b></td><td><u>19.92</u></td><td><u>19.24</u></td><td>21.75</td><td>19.79</td><td>16.08</td><td>21.40</td><td>19.38</td><td><b>20.79</b></td><td><b>21.64</b></td><td><u>16.29</u></td><td>13.50</td><td>19.15</td>
+                  </tr>
+                  <tr>
+                    <td>SSIM&uarr;</td><td>0.56</td><td>0.65</td><td><b>0.74</b></td><td>0.62</td><td>0.52</td><td>0.74</td><td>0.62</td><td>0.42</td><td><u>0.68</u></td><td>0.49</td><td><b>0.69</b></td><td><b>0.78</b></td><td><u>0.58</u></td><td>0.37</td><td><u>0.60</u></td>
+                  </tr>
+                  <tr>
+                    <td>LPIPS&darr;</td><td>0.50</td><td>0.52</td><td><u>0.38</u></td><td><u>0.37</u></td><td><u>0.44</u></td><td>0.42</td><td>0.44</td><td>0.50</td><td><u>0.35</u></td><td><u>0.36</u></td><td><b>0.28</b></td><td><u>0.25</u></td><td><u>0.41</u></td><td>0.58</td><td><u>0.41</u></td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" style="vertical-align: middle;">Droid-W</td>
+                    <td>PSNR&uarr;</td><td><u>20.59</u></td><td><u>19.83</u></td><td><u>18.61</u></td><td>18.73</td><td>17.77</td><td>20.50</td><td>17.05</td><td><u>16.71</u></td><td>18.43</td><td>19.05</td><td>17.90</td><td>21.05</td><td>13.20</td><td>14.32</td><td>18.12</td>
+                  </tr>
+                  <tr>
+                    <td>SSIM&uarr;</td><td><b>0.73</b></td><td><b>0.69</b></td><td><u>0.51</u></td><td>0.55</td><td>0.40</td><td>0.68</td><td>0.49</td><td><u>0.50</u></td><td>0.60</td><td>0.46</td><td><u>0.63</u></td><td><u>0.72</u></td><td>0.50</td><td><u>0.43</u></td><td>0.56</td>
+                  </tr>
+                  <tr>
+                    <td>LPIPS&darr;</td><td>0.37</td><td><u>0.39</u></td><td>0.46</td><td><u>0.37</u></td><td>0.52</td><td>0.51</td><td>0.58</td><td><u>0.42</u></td><td>0.43</td><td>0.39</td><td>0.36</td><td>0.27</td><td>0.50</td><td>0.57</td><td>0.44</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" style="vertical-align: middle;">YoNoSplat</td>
+                    <td>PSNR&uarr;</td><td>15.39</td><td>16.73</td><td>15.44</td><td>16.71</td><td>14.83</td><td>20.06</td><td>16.43</td><td>13.05</td><td>18.17</td><td>16.58</td><td>12.22</td><td>15.05</td><td>13.75</td><td>14.52</td><td>15.64</td>
+                  </tr>
+                  <tr>
+                    <td>SSIM&uarr;</td><td>0.44</td><td>0.35</td><td>0.33</td><td>0.42</td><td>0.33</td><td>0.66</td><td>0.54</td><td>0.38</td><td>0.52</td><td>0.37</td><td>0.35</td><td>0.41</td><td>0.34</td><td>0.35</td><td>0.41</td>
+                  </tr>
+                  <tr>
+                    <td>LPIPS&darr;</td><td>0.67</td><td>0.64</td><td>0.63</td><td>0.62</td><td>0.69</td><td>0.44</td><td>0.56</td><td>0.58</td><td>0.53</td><td>0.56</td><td>0.64</td><td>0.57</td><td>0.60</td><td>0.62</td><td>0.60</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3" style="vertical-align: middle;">AnySplat</td>
+                    <td>PSNR&uarr;</td><td>20.43</td><td>18.28</td><td>17.69</td><td>19.80</td><td>18.83</td><td><u>22.04</u></td><td><u>20.19</u></td><td>16.44</td><td><u>21.54</u></td><td><u>19.84</u></td><td>20.45</td><td>20.86</td><td>15.14</td><td><u>14.80</u></td><td><u>19.22</u></td>
+                  </tr>
+                  <tr>
+                    <td>SSIM&uarr;</td><td><u>0.68</u></td><td>0.47</td><td>0.46</td><td><u>0.63</u></td><td><u>0.55</u></td><td><u>0.75</u></td><td><b>0.72</b></td><td>0.48</td><td><b>0.73</b></td><td><u>0.55</u></td><td><b>0.69</b></td><td>0.68</td><td>0.46</td><td>0.42</td><td><u>0.60</u></td>
+                  </tr>
+                  <tr>
+                    <td>LPIPS&darr;</td><td><u>0.35</u></td><td>0.50</td><td>0.47</td><td>0.48</td><td>0.49</td><td><u>0.40</u></td><td><u>0.39</u></td><td>0.45</td><td><u>0.35</u></td><td>0.40</td><td>0.32</td><td>0.30</td><td>0.49</td><td><u>0.56</u></td><td>0.42</td>
+                  </tr>
+                  <tr style="background-color:#FCECE2;">
+                    <td rowspan="3" style="vertical-align: middle;"><b>Ours</b></td>
+                    <td>PSNR&uarr;</td><td><b>20.98</b></td><td><b>22.35</b></td><td>18.21</td><td><b>21.67</b></td><td><b>20.10</b></td><td><b>22.79</b></td><td><b>22.89</b></td><td><b>19.99</b></td><td><b>24.84</b></td><td><b>21.45</b></td><td><u>20.72</u></td><td><u>21.53</u></td><td><b>21.21</b></td><td><b>22.13</b></td><td><b>21.58</b></td>
+                  </tr>
+                  <tr style="background-color:#FCECE2;">
+                    <td>SSIM&uarr;</td><td>0.60</td><td><b>0.69</b></td><td>0.48</td><td><b>0.68</b></td><td><b>0.57</b></td><td><b>0.82</b></td><td><u>0.67</u></td><td><b>0.75</b></td><td><b>0.73</b></td><td><b>0.63</b></td><td><b>0.69</b></td><td>0.61</td><td><b>0.70</b></td><td><b>0.75</b></td><td><b>0.68</b></td>
+                  </tr>
+                  <tr style="background-color:#FCECE2;">
+                    <td>LPIPS&darr;</td><td><b>0.31</b></td><td><b>0.23</b></td><td><b>0.36</b></td><td><b>0.24</b></td><td><b>0.35</b></td><td><b>0.25</b></td><td><b>0.30</b></td><td><b>0.18</b></td><td><b>0.23</b></td><td><b>0.27</b></td><td><u>0.29</u></td><td><b>0.24</b></td><td><b>0.16</b></td><td><b>0.21</b></td><td><b>0.26</b></td>
+                  </tr>
                 </tbody>
               </table>
-              <p style="text-align:center; color:#666; font-size:0.85rem;">NemoSplat surpasses all baselines on every metric: +2.36 dB PSNR and +0.08 SSIM over the second-best AnySplat, and a 36.6% relative LPIPS reduction compared to WildGS-SLAM.</p>
+              <p style="text-align:center; color:#666; font-size:0.85rem;">Bold: best per scene. Underlined: second best. NemoSplat achieves the best average on all three metrics (PSNR 21.58 / SSIM 0.68 / LPIPS 0.26), +2.36 dB PSNR over the second-best AnySplat and a 36.6% relative LPIPS reduction compared to WildGS-SLAM.</p>
             </div>
 
           </div>
