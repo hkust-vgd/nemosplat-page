@@ -93,6 +93,11 @@ body {
   overflow: hidden;
 }
 
+/* Top hero: subtle underwater-themed gradient */
+section.hero:first-of-type {
+  background: linear-gradient(180deg, #eaf4fb 0%, #ffffff 100%);
+}
+
 .hero.is-light {
   background: var(--background-secondary);
   border-top: 1px solid var(--border-color);
@@ -339,6 +344,38 @@ body {
 
 .content.has-text-justified p {
   margin-bottom: 1.5rem;
+}
+
+/* Content images: rounded corners + soft shadow */
+.content img {
+  border-radius: 10px;
+  box-shadow: var(--shadow-md);
+}
+
+/* Tables: aligned numbers */
+.table {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Keyword tag badges under section titles */
+.keyword-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag-badge {
+  background: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+  border-radius: 999px;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 /* Footer Improvements */
